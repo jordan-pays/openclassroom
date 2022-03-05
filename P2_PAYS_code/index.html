@@ -6,7 +6,9 @@
 
         <link rel="stylesheet" type="text/css" href="./css/general.css">
         <link rel="stylesheet" type="text/css" href="./css/header.css">
+        <link rel="stylesheet" type="text/css" href="./css/search.css">
 
+        <script src="https://kit.fontawesome.com/9529e48c4d.js" crossorigin="anonymous"></script>
         <title>Booki</title>
     </head>
 
@@ -32,7 +34,24 @@
             <p >
                 En  plein centre ville ou en pleine nature 
             </p>
+                
+            <form id="recherche" action="#" method="get">
+                <div id="container_icon_localisation">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
 
+                <div id="container_inputs">
+                    <input type="text" placeholder="Ville" id="ville" />
+
+                    <div id="separateur_inputs">
+                        <p>,</p>
+                    </div>
+                    
+                    <input type="text" placeholder="Pays" id="pays"/>
+                </div>
+
+                <input type="submit" value="Rechercher" id="submit"/>
+            </form>
             
         </main>
 
