@@ -22,12 +22,12 @@ nav {
     align-items: flex-end;
 }
 
-.active{
-    color: #0065FC;
-}
-
 .element_nav_active {
     border-top: 2px solid #0065FC;
+}
+
+.element_nav_active>a{
+    color: #0065FC;
 }
 
 #container_logo{

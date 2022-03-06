@@ -7,6 +7,9 @@
         <link rel="stylesheet" type="text/css" href="./css/general.css">
         <link rel="stylesheet" type="text/css" href="./css/header.css">
         <link rel="stylesheet" type="text/css" href="./css/search.css">
+        <link rel="stylesheet" type="text/css" href="./css/filtres.css">
+        <script src="./js/general.js"></script>
+
 
         <script src="https://kit.fontawesome.com/9529e48c4d.js" crossorigin="anonymous"></script>
         <title>Booki</title>
@@ -18,10 +21,10 @@
                 <img src="./images/logo/Booki.png"  width="50%" height="45%"/>
             </div>
             <nav>
-                <div class="element_nav element_nav_active">
-                    <a class="active" href="#"> <strong>Hébergements</strong></a>
+                <div class="element_nav element_nav_active" onclick="clickNav(0)">
+                    <a href="#"> <strong>Hébergements</strong></a>
                 </div>
-                <div class="element_nav">
+                <div class="element_nav"  onclick="clickNav(1)">
                     <a href="#"><strong>Activités</strong></a>
                 </div>
             </nav>
@@ -53,6 +56,37 @@
                 <input type="submit" value="Rechercher" id="submit"/>
             </form>
             
+            <div id="container_filtres">
+                <p style="margin: 5px;">Filtres</p>
+
+                <div class="item_filtres" onclick="clickFiltres(0)">
+                    <div class="rond_filtres">
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                    </div>
+                    <p>Économique</p>
+                </div>
+
+                <div class="item_filtres" onclick="clickFiltres(1)">
+                    <div class="rond_filtres">
+                        <i class="fa-solid fa-child"></i>
+                    </div>
+                    <p>Familial</p>
+                </div>
+
+                <div class="item_filtres" onclick="clickFiltres(2)">
+                    <div class="rond_filtres">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <p>Romantique</p>
+                </div>
+
+                <div class="item_filtres" onclick="clickFiltres(3)">
+                    <div class="rond_filtres">
+                        <i class="fa-solid fa-dog"></i>
+                    </div>
+                    <p>Animaux autorisés</p>
+                </div>
+            </div>
         </main>
 
         <footer>
