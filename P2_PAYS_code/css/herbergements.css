@@ -1,0 +1,62 @@
+#container_hebergements{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#background_gris{
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 35px;
+    font-family: "relaway_bold";
+    font-size:140% ;
+    width: 60%;
+}
+
+.container_info{
+    background-color: #fff;
+    display: flex;
+    height: 200px;
+    width: 29%;
+    margin: 10px 5px;
+    padding: 5px 5px;
+    border-radius: 20px;
+    flex-direction: column;
+}
+
+.img_haut_rond{
+    border-radius: 15px 15px 0px 0px;
+}
+
+.titre_chambre{
+    font-family: "relaway_bold";
+    font-size:75% ;
+}
+
+.texte_info{
+    font-family: "relaway_regular";
+    font-size:14px;
+    margin: 0px;
+}
+
+.bon_prix{
+    font-family: "relaway_bold";
+    font-size:100% ;
+}
+
+.container_etoile{
+    display: flex ;
+    flex-direction: row ;
+    font-size: 12px;
+    margin: 5px 0px 0px 0px;
+}
+
+.blue{
+    color: #0065FC;
+}
+
+.gris{
+    color: #F2F2F2
+}

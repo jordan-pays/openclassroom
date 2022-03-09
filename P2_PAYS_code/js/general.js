@@ -10,7 +10,7 @@ function clickFiltres(id) {
         i++
     }
     if(estActif){
-        tabFiltres[id].className = tabFiltres[id].className.replace("is_active_filtres")
+        tabFiltres[id].className = tabFiltres[id].className.replace(" is_active_filtres","")
     }else{
         tabFiltres[id].className +=" is_active_filtres"
     }
@@ -31,7 +31,7 @@ function clickNav(id) {
                 }
             }else{
                 if(tabClass[j]=="element_nav_active"){
-                    tabNav[i].className = tabNav[i].className.replace("element_nav_active")
+                    tabNav[i].className = tabNav[i].className.replace(" element_nav_active","")
                 }
             }
             j++

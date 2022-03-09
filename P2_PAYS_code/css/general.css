@@ -24,10 +24,32 @@ main {
 }
 
 h3{
-    font-family: "relaway_bold" ;
+    font-family: "relaway_regular" ;
     font-size: 135%;
     margin: 0;
 }
 p{
     margin: 5px 0px;
+}
+
+#container_info{
+    display: flex;
+    flex-direction: row;
+    font-size: 9;
+    margin: 30px 0px 30px 0px;
+    align-items: center;
+}
+
+#container_logo_info{
+    margin: 0px 10px 0px 0px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "relaway_bold";
+    border: 2px solid #F2F2F2;
+    font-size: 12px;
+    height: 20px;
+    width: 20px;
+    color: #0065FC;
+    border-radius: 50px;
 }
