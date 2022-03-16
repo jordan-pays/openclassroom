@@ -1,0 +1,66 @@
+
+.container_activite{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 400px;
+    margin: 15px 0px 40px 0px;
+}
+
+.containers_petit_img_column_activite{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 22%;
+    align-items: center;
+    justify-content: space-between;
+}
+.container_grand_img_activite{
+    height: 100%;
+    width: 22%;
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    box-shadow: 2px 2px 15px 3px rgba(0,0,0,0.3);
+    border-radius: 15px 15px 15px 15px;
+    
+}
+
+.container_petit_img_activite{
+    height: 45%;
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    box-shadow: 2px 2px 15px 3px rgba(0,0,0,0.3);
+    border-radius: 15px 15px 15px 15px;
+}
+
+.img_activite{
+    height: 85%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.container_petit_img_activite>.img_activite{
+    height: 70%;
+}
+
+.container_titre_lieu{
+    display: flex;
+    flex:1;
+    margin:15px
+}
+
+.container_titre_lieu>p{
+    font-family: "relaway_bold";
+    font-size:15px;
+}
+
+.titre_activite{
+    font-family: "relaway_bold";
+    font-size:140%;
+    margin: 50px 0px 0px 0px;
+}

@@ -1,12 +1,14 @@
 body {
-    margin:0px 9% 0px 55px ;
-    padding:0;
     font-family: "relaway_regular";
 }
 
 a {
     text-decoration: none;
     color: black;
+}
+
+.first_container{
+    padding: 0px 25px;
 }
 
 @font-face {
@@ -24,15 +26,12 @@ main {
 }
 
 h3{
-    font-family: "relaway_regular" ;
+    font-family: "relaway_bold" ;
     font-size: 135%;
-    margin: 0;
-}
-p{
-    margin: 5px 0px;
+    margin: 0px 0px 10px 0px;
 }
 
-#container_info{
+.container_info{
     display: flex;
     flex-direction: row;
     font-size: 9;
@@ -40,7 +39,7 @@ p{
     align-items: center;
 }
 
-#container_logo_info{
+.container_logo_info{
     margin: 0px 10px 0px 0px ;
     display: flex;
     align-items: center;
@@ -52,4 +51,22 @@ p{
     width: 20px;
     color: #0065FC;
     border-radius: 50px;
+}
+
+.container_h_p{
+    display: flex;
+    justify-content: space-between;
+    flex:1;
+    flex-direction: row;
+    margin: 0px 0px 20px 0px;
+}
+
+@media (max-width: 996px) {
+    .container_h_p{
+        display: flex;
+        justify-content: space-between;
+        flex:1;
+        flex-direction: column;
+        margin: 0px 0px 20px 0px;
+    }
 }

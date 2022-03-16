@@ -30,7 +30,7 @@ nav {
     color: #0065FC;
 }
 
-#container_logo{
+.container_logo{
     align-self: flex-end;
     margin-left: 15px;
 }

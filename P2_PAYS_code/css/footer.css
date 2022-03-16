@@ -1,0 +1,24 @@
+.footer{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    background-color: #F2F2F2;
+    justify-content: space-between;
+    height: 230px;
+}
+
+.container_text_footer{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 35px;
+}
+
+.container_text_footer>a{
+    margin: 10px 0px;
+}
+
+.titre_footer{
+    font-family: "relaway_bold";
+    font-size: 18px;
+}
