@@ -42,14 +42,14 @@
     border-left: solid 3px #F2F2F2;
 }
 
-.is_active_filtres>.rond_filtres{
+.is_active_filtres>.circle_filtres{
     background-color: #0065FC;
     color: #DEEBFF;
     margin:0px 0px 0px 10px;
     border: solid 3px #0065FC;
 }
 
-.rond_filtres {
+.circle_filtres {
     margin:0px 10px 0px 0px;
     background-color: #DEEBFF;
     height: 45px;
@@ -62,15 +62,31 @@
     color: #0065FC;
 }
 
-
-@media (max-width: 768px) {
+@media (max-width: 996px) and (min-width:768px) {
     .container_filtres{
         flex-wrap: wrap;
         justify-content: space-between
     }
 
-    .container_filtres>p{
+    .item_filtres{
+        margin: 5px 5px;
+    }
+
+    .title_filtres{
         width: 100%;
+        margin-bottom: 5px
+    }
+}
+
+
+@media (max-width: 768px) {
+    .title_filtres{
+        margin: 5px;
+        width: 100%;
+    }
+    .container_filtres{
+        flex-wrap: wrap;
+        justify-content: space-between
     }
 
     .item_filtres{

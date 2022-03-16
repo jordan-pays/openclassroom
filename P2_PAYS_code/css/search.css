@@ -1,5 +1,5 @@
 
-.recherche {
+.search {
     display: flex;
     flex-direction: row;
     height: 53px;
@@ -16,7 +16,7 @@
     
 }
 
-.container_icon_localisation{
+.container_icon_location{
     display: flex;
     width: 50px;
     background-color: #F2F2F2;
@@ -58,6 +58,8 @@
     color: #fff;
     padding: 0px 15px;
     border-radius: 0px 15px 15px 0px;
+    align-items: center;
+    justify-content: center;
 }
 
 .submit:hover{
@@ -74,7 +76,7 @@
     .container_inputs>input {
         font-size: 16px;
     }
-    .recherche{
+    .search{
         height: 50px;
     }
 
