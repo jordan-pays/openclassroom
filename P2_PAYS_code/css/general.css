@@ -61,6 +61,10 @@ h3{
     margin: 0px 0px 20px 0px;
 }
 
+.margin5{
+    margin: 5px;
+}
+
 @media (max-width: 996px) {
     .container_h_p{
         display: flex;
