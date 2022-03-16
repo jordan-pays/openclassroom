@@ -78,14 +78,14 @@
     padding: 20px 0px 0px 5px;
 }
 
-@media (max-device-width: 996px) and (min-device-width:768px) {
+@media (max-width: 996px) and (min-width:768px) {
     .background_gris{
         width: auto;
     }
 }
 
 
-@media (max-device-width: 768px) {
+@media (max-width: 768px) {
     .background_gris{
         background-color: #fff;
         padding: 25px;

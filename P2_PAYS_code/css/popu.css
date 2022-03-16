@@ -54,7 +54,7 @@
     padding: 10px 20px;
 }
 
-@media (max-device-width: 996px) and (min-device-width:768px) {
+@media (max-width: 996px) and (min-width:768px) {
     .container_images_popu{
         flex-direction: row;
         flex-grow: 1;
@@ -85,7 +85,7 @@
     }
 }
 
-@media (max-device-width: 768px) {
+@media (max-width: 768px) {
     .container_gris_popu{
         width: auto;
         margin: 0px;

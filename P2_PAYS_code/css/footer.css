@@ -22,7 +22,7 @@ footer{
     font-size: 18px;
 }
 
-@media (max-device-width: 768px) {
+@media (max-width: 768px) {
     footer{
         flex-direction: column;
     }

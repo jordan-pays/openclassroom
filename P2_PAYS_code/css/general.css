@@ -66,7 +66,7 @@ h3{
     margin: 5px;
 }
 
-@media (max-device-width: 996px) and (min-device-width:768px) {
+@media (max-width: 996px) and (min-width:768px) {
     .container_h_p{
         display: flex;
         justify-content: space-between;
@@ -76,7 +76,7 @@ h3{
     }
 }
 
-@media (max-device-width: 768px) {
+@media (max-width: 768px) {
     .first_container{
         padding: 0px;
     }
