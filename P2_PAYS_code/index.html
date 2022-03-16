@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" type="text/css" href="./css/general.css">
@@ -28,7 +29,7 @@
     <div class="first_container">
         <header>
             <div class="container_logo">
-                <img src="./images/logo/Booki.png" width="50%" height="45%" />
+                <img srcset="./images/logo/Booki@3x.png 285w, ./images/logo/Booki.png 191w" src="./images/logo/Booki.png" class="logo_site"/>
             </div>
             <nav>
                 <div class="element_nav element_nav_active" onclick="clickNav(0)">
@@ -41,74 +42,72 @@
         </header>
 
         <main>
-            <h3>
-                Trouvez votre hébergements pour des vacances de rêve
-            </h3>
-            <p>
-                En plein centre ville ou en pleine nature
-            </p>
-            <!-- partie recherche par ville et pays -->
-            <form class="recherche" action="#" method="get">
-                <div class="container_icon_localisation">
-                    <i class="fa-solid fa-location-dot"></i>
-                </div>
-
-                <div class="container_inputs">
-                    <input type="text" placeholder="Ville" class="ville" required />
-
-                    <div class="separateur_inputs">
-                        <p>,</p>
+            <div class="container_info_site">
+                <h3>
+                    Trouvez votre hébergement pour des vacances de rêve
+                </h3>
+                <p>
+                    En plein centre ville ou en pleine nature
+                </p>
+                <!-- partie recherche par ville et pays -->
+                <form class="recherche" action="#" method="get">
+                    <div class="container_icon_localisation">
+                        <i class="fa-solid fa-location-dot"></i>
                     </div>
 
-                    <input type="text" placeholder="Pays" class="pays" required />
-                </div>
-
-                <input type="submit" value="Rechercher" class="submit" />
-            </form>
-
-            <!-- partie filtres  -->
-            <div class="container_filtres">
-                <p class="margin5">Filtres</p>
-
-                <div class="item_filtres" onclick="clickFiltres(0)">
-                    <div class="rond_filtres">
-                        <i class="fa-solid fa-money-bill-wave"></i>
+                    <div class="container_inputs">
+                        <input type="text" placeholder="Ville" class="ville" required />
+                            <p>,</p>
+                        <input type="text" placeholder="Pays" class="pays" required />
                     </div>
-                    <p>Économique</p>
-                </div>
 
-                <div class="item_filtres" onclick="clickFiltres(1)">
-                    <div class="rond_filtres">
-                        <i class="fa-solid fa-child"></i>
+                    <input type="submit" value="Rechercher" class="submit" />
+                </form>
+
+                <!-- partie filtres  -->
+                <div class="container_filtres">
+                    <p class="margin5">Filtres</p>
+
+                    <div class="item_filtres" onclick="clickFiltres(0)">
+                        <div class="rond_filtres">
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                        </div>
+                        <p>Économique</p>
                     </div>
-                    <p>Familial</p>
-                </div>
 
-                <div class="item_filtres" onclick="clickFiltres(2)">
-                    <div class="rond_filtres">
-                        <i class="fa-solid fa-heart"></i>
+                    <div class="item_filtres" onclick="clickFiltres(1)">
+                        <div class="rond_filtres">
+                            <i class="fa-solid fa-child"></i>
+                        </div>
+                        <p>Familial</p>
                     </div>
-                    <p>Romantique</p>
-                </div>
 
-                <div class="item_filtres" onclick="clickFiltres(3)">
-                    <div class="rond_filtres">
-                        <i class="fa-solid fa-dog"></i>
+                    <div class="item_filtres" onclick="clickFiltres(2)">
+                        <div class="rond_filtres">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <p>Romantique</p>
                     </div>
-                    <p>Animaux autorisés</p>
-                </div>
-            </div>
 
-            <div class="container_info">
-                <div class="container_logo_info">
-                    <i class="fa-solid fa-info"></i>
+                    <div class="item_filtres" onclick="clickFiltres(3)">
+                        <div class="rond_filtres">
+                            <i class="fa-solid fa-dog"></i>
+                        </div>
+                        <p>Animaux autorisés</p>
+                    </div>
                 </div>
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+
+                <div class="container_info">
+                    <div class="container_logo_info">
+                        <i class="fa-solid fa-info"></i>
+                    </div>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
             </div>
 
             <div id="hebergements" class="container_h_p">
                 <div class="background_gris">
-                    <p>Hébergements à Marseille</p>
+                    <p class="titre_container_hebergement">Hébergements à Marseille</p>
                     <div class="container_hebergements">
                         <a class="container_hebergements_info" href="#" >
                             <img class="img_hebergement" src="./images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" />
@@ -200,9 +199,9 @@
                             </div>
                         </a>
 
-                        <p class="show_more_hebergement">Afficher plus</p>
+                        
                     </div>
-
+                    <p class="show_more_hebergement">Afficher plus</p>
                 </div>
 
                 <div class="container_gris_popu">
@@ -314,7 +313,7 @@
             </div>
         </main>
     </div>
-    <footer class="footer">
+    <footer>
         <div class="container_text_footer">
             <a href="#">
                 <p class="titre_footer">A propos</p>

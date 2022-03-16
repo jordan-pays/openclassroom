@@ -3,7 +3,6 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    
 }
 
 .background_gris{
@@ -79,8 +78,49 @@
     padding: 20px 0px 0px 5px;
 }
 
-@media (max-width: 996px) {
+@media (max-device-width: 996px) and (min-device-width:768px) {
     .background_gris{
         width: auto;
+    }
+}
+
+
+@media (max-device-width: 768px) {
+    .background_gris{
+        background-color: #fff;
+        padding: 25px;
+        width: auto;
+    }
+    .container_hebergements{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        flex: 1;
+    }
+    .container_hebergements_info{
+        height: 175px;
+        width: 100%;
+        margin: 5px 0px;
+    }
+    .texte_info{
+        font-size: 12px;
+    }
+    .titre_chambre{
+        font-size: 14px;
+    }
+    .container_etoile{
+        font-size: 10px;
+    }
+
+    .titre_container_hebergement{
+        font-size: 20px;
+        margin: 10px 0px ;
+    }
+
+    .show_more_hebergement{
+        font-size:14px; 
+        padding: 20px 0px 0px 0px;
     }
 }

@@ -27,16 +27,17 @@ main {
 
 h3{
     font-family: "relaway_bold" ;
-    font-size: 135%;
+    font-size: 24px;
     margin: 0px 0px 10px 0px;
 }
 
 .container_info{
     display: flex;
     flex-direction: row;
-    font-size: 9;
-    margin: 30px 0px 30px 0px;
+    font-size: 14px;
+    margin: 30px 0px;
     align-items: center;
+    flex:1;
 }
 
 .container_logo_info{
@@ -65,12 +66,49 @@ h3{
     margin: 5px;
 }
 
-@media (max-width: 996px) {
+@media (max-device-width: 996px) and (min-device-width:768px) {
     .container_h_p{
         display: flex;
         justify-content: space-between;
         flex:1;
         flex-direction: column;
+        margin: 0px 0px 20px 0px;
+    }
+}
+
+@media (max-device-width: 768px) {
+    .first_container{
+        padding: 0px;
+    }
+
+    .main {
+        margin: 0px;
+    }
+
+    .container_info_site{
+        margin: 0px 15px;
+    }
+
+    .container_info{
+        align-items: flex-start;
+    }
+
+    .container_logo_info{
+        margin: 0px;
+        font-size: 12px;
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+    }
+    .container_info>p{
+        margin: 5px 0px 0px 10px;
+    }
+    
+    .container_h_p{
+        display: flex;
+        justify-content: space-between;
+        flex:1;
+        flex-direction: column-reverse;
         margin: 0px 0px 20px 0px;
     }
 }

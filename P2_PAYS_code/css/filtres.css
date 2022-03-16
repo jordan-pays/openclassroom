@@ -18,18 +18,16 @@
     flex-direction: row;
     align-items: center;
     height: 47px;
-    border-top: solid 3px #F2F2F2;
-    border-right: solid 3px #F2F2F2;
-    border-bottom: solid 3px #F2F2F2;
+    border: solid 3px #F2F2F2;
+    border-left: none;
     padding: 0px 15px 0px 0px;
     border-radius: 50px;
 }
 
 .item_filtres:hover{
     cursor: pointer;
-    border-top: solid 3px #DEEBFF;
-    border-right: solid 3px #DEEBFF;
-    border-bottom: solid 3px #DEEBFF;
+    border: solid 3px #DEEBFF;
+    border-left: none;
 }
 
 .is_active_filtres{
@@ -62,4 +60,19 @@
     border: solid 3px #DEEBFF;
     border-radius: 50px;
     color: #0065FC;
+}
+
+
+@media (max-device-width: 768px) {
+    .container_filtres{
+        flex-wrap: wrap;
+    }
+
+    .container_filtres>p{
+        width: 100%;
+    }
+
+    .item_filtres{
+        margin: 5px 5px;
+    }
 }

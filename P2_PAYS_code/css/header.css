@@ -2,8 +2,8 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
-    height: 92px;
+    align-items: center;
+    flex:1;
 }
 
 nav {
@@ -33,4 +33,51 @@ nav {
 .container_logo{
     align-self: flex-end;
     margin-left: 15px;
+}
+
+.logo_site{
+    width:50%;
+    height:45%;
+}
+
+@media (max-device-width: 768px) {
+    header{
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+    }
+
+    .element_nav{
+        border-bottom: 2px solid #F2F2F2;
+        border-top: none;
+        padding: 15px 0px;
+        align-items: center;
+        flex: 1;
+        font-size: 16px;
+        height: auto;
+    }
+
+    .element_nav_active {
+        border-bottom: 2px solid #0065FC;
+        border-top: none
+    }
+    .container_logo{
+        align-self: unset;
+        margin-left: 0px;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav {   
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .logo_site{
+        width:35%;
+        height:30%;
+    }
 }
