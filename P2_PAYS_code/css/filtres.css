@@ -86,10 +86,11 @@
     }
     .container_filtres{
         flex-wrap: wrap;
-        justify-content: space-between
+        justify-content: space-between;
+        flex-direction: row;
     }
 
     .item_filtres{
-        margin: 5px 5px;
+        margin: 5px 0px;
     }
 }

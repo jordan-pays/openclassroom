@@ -1,28 +1,43 @@
 function clickFiltres(id) {
     const tabFiltres = document.getElementsByClassName("item_filtres")
+
     toggleActive('is_active_filtres',tabFiltres[id])
 }
 
 function clickNav(id) {
     const tabNav = document.getElementsByClassName("element_nav")
-    
-    while(i<tabNav.length){
+    let i=0
 
-        if(i==id){
-
+    while (i<tabNav.length) { 
+        const isActiveBis = isActive("element_nav_active",tabNav[i])
+        if ( isActiveBis && i!=id) {
+            removeActive("element_nav_active",tabNav[i])
+        }else if(!isActiveBis && i==id){
+            addActive("element_nav_active",tabNav[i])
         }
-            
+
         i++
     }
+
+    addActive("element_nav_active",tabNav[id])
 }
 
 function toggleActive(classActive,dom) {
-    let tabClassList = dom.classList
-    const isActive = tabClassList.contains(classActive)
-
-    if(isActive){
-        tabClassList.remove(classActive)
-    }else{
-        tabClassList.add(classActive)
+    if (isActive(classActive,dom)) {
+        removeActive(classActive,dom)
+    } else {
+        addActive(classActive,dom)
     }
+}
+
+function isActive(classActive,dom){
+    return dom.classList.contains(classActive)
+}
+
+function removeActive(classActive,dom){
+    dom.classList.remove(classActive)
+}
+
+function addActive(classActive,dom){
+    dom.classList.add(classActive)
 }

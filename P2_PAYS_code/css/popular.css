@@ -76,7 +76,8 @@
         padding: 5px 5px;
         border-radius: 20px;
         flex-direction: column;
-        box-shadow:   2px 2px 15px 3px rgba(0,0,0,0.3)
+        box-shadow:   2px 2px 15px 3px rgba(0,0,0,0.3);
+        
     }
     .img_popular{
         border-radius: 15px 15px 0px 0px;
@@ -91,5 +92,8 @@
         margin: 0px;
         border-radius: 0px;
         padding: 25px;
+    }
+    .container_popular_info{
+        max-width: 400px;
     }
 }
