@@ -2,7 +2,7 @@
 .search {
     display: flex;
     flex-direction: row;
-    height: 53px;
+    height: 50px;
     margin-top: 20px;
     font-family: "relaway_bold";
     font-size: 24px;
@@ -70,7 +70,7 @@
     .container_inputs{
         border-top: solid 1px #F2F2F2;
         border-bottom: solid 1px #F2F2F2;
-        max-width: 400;
+        max-width: 400px;
     }
 
     .container_inputs>input {
@@ -91,5 +91,8 @@
         padding: 0px 15px;
         border-radius: 15px 15px 15px 15px;
         width: 50px;
+        position: relative;
+        right: 150;
+        z-index: 2;
     }
 }

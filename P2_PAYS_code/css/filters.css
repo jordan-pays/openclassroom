@@ -1,4 +1,4 @@
-.container_filtres{
+.container_filters{
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -9,7 +9,7 @@
     align-items: center;
 }
 
-.item_filtres{
+.item_filters{
     margin: 0px 15px;
     transition-timing-function: linear;
     transition-property:all;
@@ -24,13 +24,13 @@
     border-radius: 50px;
 }
 
-.item_filtres:hover{
+.item_filters:hover{
     cursor: pointer;
     border: solid 3px #DEEBFF;
     border-left: none;
 }
 
-.is_active_filtres{
+.is_active_filters{
     transition-timing-function: linear;
     transition-property:all;
     transition-duration: 500ms;
@@ -42,14 +42,14 @@
     border-left: solid 3px #F2F2F2;
 }
 
-.is_active_filtres>.circle_filtres{
+.is_active_filters>.circle_filters{
     background-color: #0065FC;
     color: #DEEBFF;
     margin:0px 0px 0px 10px;
     border: solid 3px #0065FC;
 }
 
-.circle_filtres {
+.circle_filters {
     margin:0px 10px 0px 0px;
     background-color: #DEEBFF;
     height: 45px;
@@ -62,17 +62,17 @@
     color: #0065FC;
 }
 
-@media (max-width: 996px) and (min-width:768px) {
-    .container_filtres{
+@media (max-width: 992px) and (min-width:768px) {
+    .container_filters{
         flex-wrap: wrap;
         justify-content: space-between
     }
 
-    .item_filtres{
+    .item_filters{
         margin: 5px 5px;
     }
 
-    .title_filtres{
+    .title_filters{
         width: 100%;
         margin-bottom: 5px
     }
@@ -80,16 +80,16 @@
 
 
 @media (max-width: 768px) {
-    .title_filtres{
+    .title_filters{
         margin: 5px;
         width: 100%;
     }
-    .container_filtres{
+    .container_filters{
         flex-wrap: wrap;
         justify-content: space-between
     }
 
-    .item_filtres{
+    .item_filters{
         margin: 5px 5px;
     }
 }

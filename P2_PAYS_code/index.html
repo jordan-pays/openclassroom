@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./css/general.css">
     <link rel="stylesheet" type="text/css" href="./css/header.css">
     <link rel="stylesheet" type="text/css" href="./css/search.css">
-    <link rel="stylesheet" type="text/css" href="./css/filtres.css">
+    <link rel="stylesheet" type="text/css" href="./css/filters.css">
     <link rel="stylesheet" type="text/css" href="./css/lodging.css">
     <link rel="stylesheet" type="text/css" href="./css/popular.css">
     <link rel="stylesheet" type="text/css" href="./css/activity.css">
@@ -25,10 +25,9 @@
 </head>
 
 <body>
-    <div class="first_container">
-        <header>
+        <header class="first_container">
             <div class="container_logo">
-                <img srcset="./images/logo/Booki@3x.png 285w, ./images/logo/Booki.png 191w" sizes="(max-width: 768px) 191px,285px" src="./images/logo/Booki.png" class="logo_site" alt="logo Booki"/>
+                <img srcset="./images/logo/Booki@3x.png 285w, ./images/logo/Booki.png 191w" sizes="(max-width: 768px) 191px,100vw" src="./images/logo/Booki.png" class="logo_site" alt="logo Booki"/>
             </div>
             <nav>
                 <div class="element_nav element_nav_active" onclick="clickNav(0)">
@@ -40,7 +39,7 @@
             </nav>
         </header>
 
-        <main>
+        <main class="first_container">
             <div class="container_info_site">
                 <h3>
                     Trouvez votre hébergement pour des vacances de rêve
@@ -61,38 +60,40 @@
                     </div>
 
                     <button type="submit" class="submit" >
-                        <i class="fa-solid fa-magnifying-glass show_in_mobile"></i>  
+                        <span class="show_in_mobile">
+                            <i class="fa-solid fa-magnifying-glass"></i>  
+                        </span>
                         <span class="show_in_desktop">Rechercher</span>
                     </button>
                 </form>
 
-                <!-- partie filtres  -->
-                <div class="container_filtres">
-                    <p class="title_filtres">Filtres</p>
+                <!-- partie filters  -->
+                <div class="container_filters">
+                    <p class="title_filters">filters</p>
 
-                    <div class="item_filtres" onclick="clickFiltres(0)">
-                        <div class="circle_filtres">
+                    <div class="item_filters" onclick="clickfilters(0)">
+                        <div class="circle_filters">
                             <i class="fa-solid fa-money-bill-wave"></i>
                         </div>
                         <p>Économique</p>
                     </div>
 
-                    <div class="item_filtres" onclick="clickFiltres(1)">
-                        <div class="circle_filtres">
+                    <div class="item_filters" onclick="clickfilters(1)">
+                        <div class="circle_filters">
                             <i class="fa-solid fa-child"></i>
                         </div>
                         <p>Familial</p>
                     </div>
 
-                    <div class="item_filtres" onclick="clickFiltres(2)">
-                        <div class="circle_filtres">
+                    <div class="item_filters" onclick="clickfilters(2)">
+                        <div class="circle_filters">
                             <i class="fa-solid fa-heart"></i>
                         </div>
                         <p>Romantique</p>
                     </div>
 
-                    <div class="item_filtres" onclick="clickFiltres(3)">
-                        <div class="circle_filtres">
+                    <div class="item_filters" onclick="clickfilters(3)">
+                        <div class="circle_filters">
                             <i class="fa-solid fa-dog"></i>
                         </div>
                         <p>Animaux autorisés</p>
@@ -112,7 +113,7 @@
                     <p class="title_container_lodging">Hébergements à Marseille</p>
                     <div class="container_lodging">
                         <a class="container_lodging_info" href="#" >
-                            <img class="img_lodging" sizes="(max-width: 768px) 750px, 1499px"  
+                            <img class="img_lodging" sizes="(max-width: 768px) 750px, 100vw"  
                                 srcset="./images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg 5993w, 
                                         ./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg 2997w, 
                                         ./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg 1499w,
@@ -134,7 +135,7 @@
                         </a>
 
                         <a class="container_lodging_info" href="#">
-                            <img class="img_lodging" sizes="(max-width: 768px) 684px, 1368px" 
+                            <img class="img_lodging" sizes="(max-width: 768px) 684px, 100vw" 
                                 srcset="./images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg 5472w, 
                                         ./images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg 2736w, 
                                         ./images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg 1368w,
@@ -156,7 +157,7 @@
                         </a>
 
                         <a class="container_lodging_info" href="#">
-                            <img class="img_lodging" sizes="(max-width: 768px) 750px, 1500px"
+                            <img class="img_lodging" sizes="(max-width: 768px) 750px, 100vw"
                                 srcset="./images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg 6000w, 
                                         ./images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg 3000w, 
                                         ./images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg 1500w,
@@ -178,7 +179,7 @@
                         </a>
 
                         <a class="container_lodging_info" href="#"> 
-                            <img class="img_lodging" sizes="(max-width: 768px) 500px, 1000px" 
+                            <img class="img_lodging" sizes="(max-width: 768px) 500px, 100vw" 
                                 srcset="./images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg 4000w, 
                                         ./images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg 2000w, 
                                         ./images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg 1000w,
@@ -200,7 +201,7 @@
                         </a>
 
                         <a class="container_lodging_info" href="#">
-                            <img class="img_lodging" sizes="(max-width: 768px) 652px,1303px"
+                            <img class="img_lodging" sizes="(max-width: 768px) 652px, 100vw"
                                 srcset="./images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 5212w, 
                                         ./images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 2606w, 
                                         ./images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 1303w,
@@ -222,8 +223,8 @@
                         </a>
 
                         <a class="container_lodging_info" href="#">
-                            <img class="img_lodging" sizes="(max-width: 768px) 486px, 976px" 
-                                srcset="./images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 3888W, 
+                            <img class="img_lodging" sizes="(max-width: 768px) 486px, 100vw" 
+                                srcset="./images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 3888w, 
                                         ./images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 1994w, 
                                         ./images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 976w,
                                         ./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 486w" 
@@ -255,7 +256,7 @@
                     </div>
                     <div class="container_images_popular">
                         <a class="container_popular_info"  href="#">
-                            <img class="img_popular" sizes="(max-width: 768px) 532px, 1063px" 
+                            <img class="img_popular" sizes="(max-width: 768px) 532px, 100vw" 
                                 srcset="./images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 4249w, 
                                         ./images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 2125w, 
                                         ./images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 1063w,
@@ -277,7 +278,7 @@
                         </a>
 
                         <a class="container_popular_info" href="#"> 
-                            <img class="img_popular" sizes="(max-width: 768px) 504px, 1008px" 
+                            <img class="img_popular" sizes="(max-width: 768px) 504px, 100vw" 
                                 srcset="./images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg 4032w, 
                                         ./images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg 2016w, 
                                         ./images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg 1008w ,
@@ -299,7 +300,7 @@
                         </a>
 
                         <a class="container_popular_info" href="#">
-                            <img class="img_popular" sizes="(max-width: 768px) 500px, 1000px" 
+                            <img class="img_popular" sizes="(max-width: 768px) 500px, 100vw" 
                                 srcset="./images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg 4000w, 
                                     ./images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg 2000w, 
                                     ./images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg 1000w,
@@ -327,7 +328,7 @@
 
             <div class="container_activity">
                 <a class="container_huge_img_activity" href="#">
-                    <img class="img_activity" sizes="(max-width: 768px) 702px, 1404px" 
+                    <img class="img_activity" sizes="(max-width: 768px) 702px, 100vw" 
                         srcset="./images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 5616w,
                                 ./images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 2808w, 
                                 ./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 1404w ,
@@ -342,7 +343,7 @@
 
                 <div class="containers_small_img_column_activity">
                     <a class="container_small_img_activity" href="#">
-                        <img class="img_activity" sizes="(max-width: 768px) 356px, 711px" 
+                        <img class="img_activity" sizes="(max-width: 768px) 356px, 100vw" 
                             srcset="./images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg 2843w, 
                                     ./images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg 1422w, 
                                     ./images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg 711w ,
@@ -356,7 +357,7 @@
                     </a>
     
                     <a class="container_small_img_activity" href="#">
-                        <img class="img_activity" sizes="(max-width: 768px) 648px, 1296px" 
+                        <img class="img_activity" sizes="(max-width: 768px) 648px, 100vw" 
                             srcset="./images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 5184w, 
                                     ./images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 2592w, 
                                     ./images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 1296w ,
@@ -373,7 +374,7 @@
                 
 
                 <a class="container_huge_img_activity" href="#">
-                    <img class="img_activity" sizes="(max-width: 768px) 606px, 1212px" 
+                    <img class="img_activity" sizes="(max-width: 768px) 606px, 100vw" 
                         srcset="./images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 4846w, 
                                 ./images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 2423w, 
                                 ./images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 1212w ,
@@ -389,7 +390,7 @@
                 <div class="containers_small_img_column_activity">
                    
                     <a class="container_small_img_activity" href="#">
-                        <img class="img_activity" sizes="(max-width: 768px) 589px,1178px" 
+                        <img class="img_activity" sizes="(max-width: 768px) 589px, 100vw" 
                             srcset="./images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg 4712w, 
                                     ./images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg 2356w, 
                                     ./images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg 1178w ,
@@ -403,7 +404,7 @@
                     </a>
                     
                     <a class="container_small_img_activity" href="#">
-                        <img class="img_activity" sizes="(max-width: 768px) 504px, 1008px" 
+                        <img class="img_activity" sizes="(max-width: 768px) 504px, 100vw" 
                             srcset="./images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg 4032w, 
                                     ./images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg 2016w, 
                                     ./images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg 1008w ,
@@ -419,7 +420,6 @@
                 </div>
             </div>
         </main>
-    </div>
     
     <footer>
         <div class="container_footer first_container">

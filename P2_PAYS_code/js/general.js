@@ -1,6 +1,6 @@
-function clickFiltres(id) {
-    const tabFiltres = document.getElementsByClassName("item_filtres")
-    toggleActive('is_active_filtres', tabFiltres[id])
+function clickfilters(id) {
+    const tabfilters = document.getElementsByClassName("item_filters")
+    toggleActive('is_active_filters', tabfilters[id])
 }
 
 function clickNav(id) {
@@ -17,9 +17,8 @@ function clickNav(id) {
 }
 
 function toggleActive(classActive, dom) {
-    let tabClassList = dom.classList
+    const tabClassList = dom.classList
     const isActive = tabClassList.contains(classActive)
-
     if (isActive) {
         tabClassList.remove(classActive)
     } else {
