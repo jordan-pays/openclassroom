@@ -18,7 +18,7 @@
 
 .container_icon_location{
     display: flex;
-    width: 50px;
+    min-width: 50px;
     background-color: #F2F2F2;
     align-items: center;
     justify-content: center;

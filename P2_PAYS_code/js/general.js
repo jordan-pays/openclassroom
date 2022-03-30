@@ -1,7 +1,6 @@
-function clickFiltres(id) {
-    const tabFiltres = document.getElementsByClassName("item_filtres")
-
-    toggleActive('is_active_filtres',tabFiltres[id])
+function clickfilters(id) {
+    const tabFilters = document.getElementsByClassName("item_filters")
+    toggleActive('is_active_filters',tabFilters[id])
 }
 
 function clickNav(id) {

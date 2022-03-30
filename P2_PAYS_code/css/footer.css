@@ -43,9 +43,8 @@ footer{
     .container_text_footer{
         display: flex;
         flex-direction: column;
-        flex: 1;
-        margin: 25px 0px 25px 25px;
-        min-width: 350px;
+        margin: 25px;
+        min-width: 250px;
         max-width: 400px;
     }
 }
