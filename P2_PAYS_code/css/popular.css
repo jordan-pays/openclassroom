@@ -54,7 +54,7 @@
     padding: 10px 20px;
 }
 
-@media (max-width: 996px) and (min-width:768px) {
+@media (max-width: 992px) and (min-width:768px) {
     .container_images_popular{
         flex-direction: row;
         flex-grow: 1;
