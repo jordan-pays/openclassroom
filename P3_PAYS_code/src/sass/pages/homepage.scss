@@ -1,0 +1,170 @@
+.container-location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: darken($color-gray,5%);
+    border-top: 2px solid darken($color-gray, 15%) ;
+    &__item{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        &--text{
+            color: darken( $color-gray, 70%) ;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        &--icon{
+            margin-right: 15px;
+            font-size: 20px;
+        }
+    }
+}
+
+.container-explain{
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:$color-gray ;
+    padding: 8%;
+    &__text{
+        text-align: center;
+    }
+    &__sentences{
+        font-size: 16px;
+        text-align: center;
+        color : darken($color-gray, 50%) ;
+        margin-top:10px ;
+    }
+}
+
+.functioning{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 20px;
+
+    &-text{
+        margin: 20px 0px;
+    }
+
+    &-item{
+        display: flex;
+        align-items: center;
+        background-color:$color-gray ;
+        margin: 10px 0px;
+        border-radius: 25px;
+        height: 65px;
+        padding: 0px 40px;
+
+        @include shadow-obj;
+
+        &--active{
+            background-color: rgba($color-primary,0.1)
+        }
+        
+        &__circle{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            background-color: $color-primary;
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            left: 3%;
+            >p{
+                color: white;
+                font-size: 12px;
+            }
+        }
+
+        &__info{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            &--icon{
+                color : darken($color-gray, $amount: 50) ;
+                font-size: 18px;
+                margin-right: 20px ;
+                &--active{
+                    color: $color-primary
+                }
+            }
+
+            &--text{
+                font-weight: bold;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.restaurant{
+    background-color: $color-gray;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    &-text{
+        margin-top: 25px ;
+        margin-bottom: 15px;
+    }
+    &-item{
+        border-radius: 15px;
+        background-color: white;
+        margin: 10px 0px;
+        height: 275px;
+        display: flex;
+        flex-direction: column;
+        @include shadow-obj;
+
+        &__image{
+            border-radius: 15px 15px 0px 0px;
+            object-fit: cover;
+            width:100%;
+            height:75%;
+        }
+
+        &__new{
+            position: absolute;
+            background-color: $color-tertiary;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            width: 100px;
+            left: 65%;
+            margin-top: 15px;
+            &--text{
+                color: darken($color-tertiary,35%);
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.item-info{
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    flex:1;
+    padding: 5px 20px 5px 10px;
+    &__title{   
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        &--text{
+            font-weight: bold;
+            font-size: 18px
+        }
+    }
+    &__heart{
+        color:black;
+        align-items: center;
+        display: flex;
+        font-size: 24px;
+    }
+}

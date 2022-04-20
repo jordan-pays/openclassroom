@@ -1,0 +1,28 @@
+.footer{
+    background-color: darken($color-gray, $amount: 75) ;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    &-title{
+        color:white;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    &-item{
+        display: flex;
+        align-items: center;
+        &__text{
+            color: white;
+            font-size: 14px;
+            margin: 7px 0px;
+        }
+        &__icon{
+            color: white;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+    }
+    
+}

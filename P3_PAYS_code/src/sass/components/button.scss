@@ -1,0 +1,12 @@
+.button{
+    background: linear-gradient(175deg, $color-secondary 0%, $color-primary 100%);
+    border: none;
+    border-radius: 50px;
+    height: 40px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    width: 200px;
+    @include shadow-obj;
+}

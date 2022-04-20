@@ -1,0 +1,9 @@
+.header{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-container__logo{
+        width: 45%;
+    }
+}
