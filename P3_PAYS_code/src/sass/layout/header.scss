@@ -3,7 +3,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex:1;
     &-container__logo{
-        width: 45%;
+        max-width: 45%;
+    }
+    &-arrow{
+        color:darken($color-gray,70%);
+        font-size: 20px;
+        position: relative;
+        right: 15%;
     }
 }

@@ -1,0 +1,81 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 15px;
+    position: relative;
+    bottom: 55px;
+    border-radius: 35px 35px 0px 0px;
+    &-title{
+        &__info{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 20px;
+            margin-bottom: 25px;
+        }
+        &__text{
+            font-size: 24px;
+        }
+    }
+    &-item{
+        background-color: white;
+        display: flex;
+        height: 75px;
+        border-radius: 20px;
+        margin: 10px 0px;
+        @include shadow-obj;
+        overflow: hidden;
+        &__container{
+            flex-direction: column;
+            justify-content: space-between ;
+            display: flex;
+            flex:1;
+            padding: 15px 15px;
+            min-width:60%;
+        }
+        
+        &__text{
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        &__info{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__price{
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        &__check{
+            min-width: 75px;
+            background-color: $color-tertiary;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            color: white;
+        }
+        
+    }
+    &-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex:1 ;
+    }
+    &-container{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 35px;
+    }
+}
+.green-line{
+    height: 4px;
+    background-color: $color-tertiary;
+    width: 40px;
+    margin: 5px 0px;
+}
