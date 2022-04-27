@@ -174,8 +174,8 @@ a {
   border-radius: 25px;
   height: 65px;
   padding: 0px 40px;
-  -webkit-box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.22);
-          box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.18);
+          box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.18);
 }
 
 .functioning-item--active {
@@ -263,8 +263,8 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  -webkit-box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.22);
-          box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.18);
+          box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.18);
 }
 
 .restaurant-item__image {
@@ -349,8 +349,8 @@ a {
   text-align: center;
   margin-top: 20px;
   width: 200px;
-  -webkit-box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.22);
-          box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.18);
+          box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.18);
 }
 
 .footer {
@@ -407,6 +407,8 @@ a {
   position: relative;
   bottom: 55px;
   border-radius: 35px 35px 0px 0px;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 .menu-title__info {
@@ -424,7 +426,8 @@ a {
 }
 
 .menu-title__text {
-  font-size: 24px;
+  font-size: 26px;
+  font-weight: 500;
 }
 
 .menu-item {
@@ -435,8 +438,11 @@ a {
   height: 75px;
   border-radius: 20px;
   margin: 10px 0px;
-  -webkit-box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.22);
-          box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.22);
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.18);
+          box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.18);
   overflow: hidden;
 }
 
@@ -478,22 +484,18 @@ a {
 .menu-item__price {
   font-size: 15px;
   font-weight: bold;
+  margin: 0px 5px;
 }
 
-.menu-item__check {
+.menu-item:active .check, .menu-item:hover .check {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
   min-width: 75px;
-  background-color: #99E2D0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 30px;
-  color: white;
+}
+
+.menu-item:active .check > .check--anime, .menu-item:hover .check > .check--anime {
+  -webkit-transform: translate(0, 0) rotate(720deg);
+          transform: translate(0, 0) rotate(720deg);
 }
 
 .menu-button {
@@ -527,5 +529,37 @@ a {
   background-color: #99E2D0;
   width: 40px;
   margin: 5px 0px;
+}
+
+.check {
+  width: 0px;
+  background-color: #99E2D0;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform-origin: right 50%;
+          transform-origin: right 50%;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.check--anime {
+  color: white;
+  font-size: 30px;
+  -webkit-transform: translate(100px, 0);
+          transform: translate(100px, 0);
+  display: block;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: all 650ms ease-in-out;
+  transition: all 650ms ease-in-out;
 }
 /*# sourceMappingURL=main.css.map */
