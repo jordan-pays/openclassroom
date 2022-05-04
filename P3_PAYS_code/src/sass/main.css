@@ -1,11 +1,11 @@
 @font-face {
   font-family: "shrikand";
-  src: url(../../../fonts/shrikhand/Shrikhand-Regular.ttf);
+  src: url(./../../fonts/shrikhand/Shrikhand-Regular.ttf);
 }
 
 @font-face {
   font-family: "roboto-regular";
-  src: url(../../../fonts/roboto/Roboto-Regular.ttf);
+  src: url(./../../fonts/roboto/Roboto-Regular.ttf);
 }
 
 .header {
@@ -337,12 +337,38 @@ a {
   display: -ms-flexbox;
   display: flex;
   font-size: 24px;
+  z-index: 1;
+  position: relative;
+}
+
+.item-info__heart:active .heart--active, .item-info__heart:hover .heart--active {
+  z-index: 2;
+  opacity: 1;
+}
+
+.heart--active {
+  position: absolute;
+  color: #9356DC;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  left: 84.95%;
+  margin-top: 3px;
+  opacity: 0;
+  z-index: 0;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition: opacity 500ms linear;
+  transition: opacity 500ms linear;
 }
 
 .button {
   background: linear-gradient(175deg, #FF79DA 0%, #9356DC 100%);
   border: none;
   border-radius: 50px;
+  position: relative;
+  z-index: 1;
   height: 40px;
   padding: 10px;
   color: white;
@@ -351,6 +377,30 @@ a {
   width: 200px;
   -webkit-box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.18);
           box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.18);
+}
+
+.button:active::after, .button:hover::after {
+  opacity: 1;
+  -webkit-box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.35);
+}
+
+.button::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: none;
+  -webkit-box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.18);
+          box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.18);
+  border-radius: 50px;
+  background: linear-gradient(175deg, #ff93e1 0%, #a16be0 100%);
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
 }
 
 .footer {

@@ -2,6 +2,8 @@
     background: linear-gradient(175deg, $color-secondary 0%, $color-primary 100%);
     border: none;
     border-radius: 50px;
+    position: relative;
+    z-index: 1;
     height: 40px;
     padding: 10px;
     color: white;
@@ -9,4 +11,27 @@
     margin-top: 20px;
     width: 200px;
     @include shadow-obj;
+    &:active , &:hover{
+        &::after {
+            opacity: 1;
+            @include shadow-obj_max;
+        }
+    }
+    &::after {
+        content: " ";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;  
+        left: 0;
+        border: none;
+    @include shadow-obj;
+
+        border-radius: 50px;
+        background: linear-gradient(175deg, lighten($color-secondary,5%) 0%, lighten($color-primary,5%) 100%);
+        opacity: 0;
+        z-index: -1;
+        transition: all 400ms;
+        
+    }
 }
