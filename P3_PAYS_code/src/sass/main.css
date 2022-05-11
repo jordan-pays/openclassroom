@@ -662,4 +662,80 @@ a {
   top: 5%;
   left: 93%;
 }
+
+.loader-item {
+  border: 10px solid #F2F2F2;
+  border-top: 10px solid #9356DC;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  left: 50%;
+  top: 50%;
+  opacity: 1;
+  -webkit-animation: spin 1s linear infinite, displayLoader 3s;
+          animation: spin 1s linear infinite, displayLoader 3s;
+}
+
+.loader-out {
+  -webkit-animation: out 3s;
+          animation: out 3s;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes displayLoader {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes displayLoader {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes out {
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes out {
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /*# sourceMappingURL=main.css.map */

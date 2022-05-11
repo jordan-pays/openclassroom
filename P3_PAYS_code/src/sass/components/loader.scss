@@ -1,0 +1,48 @@
+.loader {
+    &-item {
+        border: 10px solid $color-gray;
+        border-top: 10px solid $color-primary;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        left: 50%;
+        top:50%;
+        opacity: 1;
+        visibility: hidden;
+        animation: spin 1s linear infinite, displayLoader 3s;
+    }
+
+    &-out {
+        animation: out 3s;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes displayLoader {
+    0% {
+        visibility: visible;
+    }
+
+    100% {
+        visibility: hidden;
+    }
+}
+
+@keyframes out {
+    99% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
