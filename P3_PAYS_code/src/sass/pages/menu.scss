@@ -1,103 +1,133 @@
-.menu{
+.menu {
     display: flex;
     flex-direction: column;
     padding: 30px 15px;
     position: relative;
     bottom: 55px;
     border-radius: 35px 35px 0px 0px;
-    transition:all 200ms ease-in-out;
-    &-title{
-        &__info{
+    transition: all 200ms ease-in-out;
+
+    &-title {
+        &__info {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-right: 20px;
             margin-bottom: 25px;
+            margin-right: 20px;
+            position: relative;
         }
-        &__text{
+
+        &__text {
             font-size: 26px;
             font-weight: 500;
         }
     }
-    &-item{
+
+    &-item {
         background-color: white;
         display: flex;
         height: 75px;
         border-radius: 20px;
-        margin: 10px 0px;
         justify-content: flex-end;
         @include shadow-obj;
         overflow: hidden;
-        &__container{
+        margin: 10px 0px;
+        &__container {
             flex-direction: column;
-            justify-content: space-between ;
+            justify-content: space-between;
             display: flex;
-            flex:1;
+            flex: 1;
             padding: 15px 15px;
-            min-width:60%;
+            min-width: 60%;
         }
 
-        &__text{
+        &__text {
             font-size: 20px;
             font-weight: bold;
         }
 
-        &__info{
+        &__info {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        &__price{
+        &__price {
             font-size: 15px;
             font-weight: bold;
             margin: 0px 5px;
         }
 
-        &:active  .check,&:hover  .check {
-            transform: scale(1,1);
+        &:active .check,
+        &:hover .check {
+            transform: scale(1, 1);
             min-width: 75px;
 
-            > .check--anime{
-                transform: translate(0,0)  rotate(720deg);
+            >.check--anime {
+                transform: translate(0, 0) rotate(720deg);
             }
         }
-        
+
     }
-    &-button{
+
+    &-button {
         display: flex;
         align-items: center;
         justify-content: center;
-        flex:1 ;
+        flex: 1;
     }
-    &-container{
+
+    &-container {
         display: flex;
         flex-direction: column;
         margin-bottom: 35px;
+
     }
 }
-.green-line{
+
+.green-line {
     height: 4px;
     background-color: $color-tertiary;
     width: 40px;
     margin: 5px 0px;
 }
 
-.check{
+.check {
     width: 0px;
     background-color: $color-tertiary;
-    transform: scale(0,1);
+    transform: scale(0, 1);
     align-items: center;
     justify-content: center;
     display: flex;
-    transform-origin:right 50%;
-    transition: all 500ms ease-in-out ;
-    &--anime{
+    transform-origin: right 50%;
+    transition: all 500ms ease-in-out;
+
+    &--anime {
         color: white;
         font-size: 30px;
-        transform: translate(100px,0);
+        transform: translate(100px, 0);
         display: block;
-        transform-origin:center;
-        transition:all 650ms ease-in-out
+        transform-origin: center;
+        transition: all 650ms ease-in-out
     }
+}
+
+@for $i from 3 to 6 {
+    .menu-item:nth-child(#{$i}){
+        animation: showMenu #{$i}250ms;
+        animation-delay: 120ms;
+    }
+}
+
+@keyframes showMenu {
+    from{
+        opacity: 0;
+        margin: 50px 10px;
+    }
+
+    to{
+        opacity: 1;
+        margin: 10px 0px;
+    }
+    
 }

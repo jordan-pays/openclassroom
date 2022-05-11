@@ -183,7 +183,7 @@ a {
 }
 
 .functioning-item__circle {
-  position: absolute;
+  position: relative;
   height: 20px;
   width: 20px;
   background-color: #9356DC;
@@ -197,7 +197,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  left: 3%;
+  right: 18%;
 }
 
 .functioning-item__circle > p {
@@ -263,6 +263,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  position: relative;
   -webkit-box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.18);
           box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.18);
 }
@@ -289,8 +290,8 @@ a {
           justify-content: center;
   height: 30px;
   width: 100px;
-  right: 10%;
-  margin-top: 15px;
+  right: 7%;
+  top: 7%;
 }
 
 .restaurant-item__new--text {
@@ -309,6 +310,7 @@ a {
       -ms-flex: 1;
           flex: 1;
   padding: 5px 20px 5px 10px;
+  position: relative;
 }
 
 .item-info__title {
@@ -326,41 +328,6 @@ a {
 .item-info__title--text {
   font-weight: bold;
   font-size: 18px;
-}
-
-.item-info__heart {
-  color: black;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 24px;
-  z-index: 1;
-  position: relative;
-}
-
-.item-info__heart:active .heart--active, .item-info__heart:hover .heart--active {
-  z-index: 2;
-  opacity: 1;
-}
-
-.heart--active {
-  position: absolute;
-  color: #9356DC;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 24px;
-  left: 84.95%;
-  margin-top: 3px;
-  opacity: 0;
-  z-index: 0;
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
-  -webkit-transition: opacity 500ms linear;
-  transition: opacity 500ms linear;
 }
 
 .button {
@@ -471,8 +438,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-right: 20px;
   margin-bottom: 25px;
+  margin-right: 20px;
+  position: relative;
 }
 
 .menu-title__text {
@@ -487,13 +455,13 @@ a {
   display: flex;
   height: 75px;
   border-radius: 20px;
-  margin: 10px 0px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   -webkit-box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.18);
           box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.18);
   overflow: hidden;
+  margin: 10px 0px;
 }
 
 .menu-item__container {
@@ -537,13 +505,15 @@ a {
   margin: 0px 5px;
 }
 
-.menu-item:active .check, .menu-item:hover .check {
+.menu-item:active .check,
+.menu-item:hover .check {
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
   min-width: 75px;
 }
 
-.menu-item:active .check > .check--anime, .menu-item:hover .check > .check--anime {
+.menu-item:active .check > .check--anime,
+.menu-item:hover .check > .check--anime {
   -webkit-transform: translate(0, 0) rotate(720deg);
           transform: translate(0, 0) rotate(720deg);
 }
@@ -611,5 +581,85 @@ a {
           transform-origin: center;
   -webkit-transition: all 650ms ease-in-out;
   transition: all 650ms ease-in-out;
+}
+
+.menu-item:nth-child(3) {
+  -webkit-animation: showMenu 3250ms;
+          animation: showMenu 3250ms;
+  -webkit-animation-delay: 120ms;
+          animation-delay: 120ms;
+}
+
+.menu-item:nth-child(4) {
+  -webkit-animation: showMenu 4250ms;
+          animation: showMenu 4250ms;
+  -webkit-animation-delay: 120ms;
+          animation-delay: 120ms;
+}
+
+.menu-item:nth-child(5) {
+  -webkit-animation: showMenu 5250ms;
+          animation: showMenu 5250ms;
+  -webkit-animation-delay: 120ms;
+          animation-delay: 120ms;
+}
+
+@-webkit-keyframes showMenu {
+  from {
+    opacity: 0;
+    margin: 50px 10px;
+  }
+  to {
+    opacity: 1;
+    margin: 10px 0px;
+  }
+}
+
+@keyframes showMenu {
+  from {
+    opacity: 0;
+    margin: 50px 10px;
+  }
+  to {
+    opacity: 1;
+    margin: 10px 0px;
+  }
+}
+
+.heart {
+  color: black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.heart:active + .heart--active, .heart:hover + .heart--active {
+  z-index: 2;
+  opacity: 1;
+}
+
+.heart--active {
+  position: absolute;
+  color: #9356DC;
+  font-size: 24px;
+  top: 32%;
+  left: 88%;
+  z-index: 0;
+  opacity: 0;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition: opacity 500ms linear;
+  transition: opacity 500ms linear;
+}
+
+.menu-heart {
+  top: 5%;
+  left: 93%;
 }
 /*# sourceMappingURL=main.css.map */

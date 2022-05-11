@@ -25,7 +25,7 @@
         bottom: 0;  
         left: 0;
         border: none;
-    @include shadow-obj;
+        @include shadow-obj;
 
         border-radius: 50px;
         background: linear-gradient(175deg, lighten($color-secondary,5%) 0%, lighten($color-primary,5%) 100%);

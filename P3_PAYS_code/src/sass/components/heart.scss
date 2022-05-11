@@ -1,0 +1,30 @@
+.heart{
+    color: black;
+    align-items: center;
+    display: flex;
+    font-size: 24px;
+    position: relative;
+    z-index: 1;
+    &:active , &:hover {
+        + .heart--active{
+            z-index: 2;
+            opacity: 1;
+        } 
+    }
+    &--active{
+        position: absolute;
+        color: $color-primary;
+        font-size: 24px;
+        top:32%;
+        left:88%;
+        z-index: 0;
+        opacity: 0;
+        transform-origin: bottom;
+        transition: opacity 500ms linear;
+    }
+}
+
+.menu-heart{
+    top:5%;
+    left:93%;
+}
