@@ -669,9 +669,12 @@ a {
   border-radius: 50%;
   width: 45px;
   height: 45px;
-  left: 50%;
-  top: 50%;
+  left: 40%;
+  top: 15%;
   opacity: 1;
+  z-index: -1;
+  visibility: hidden;
+  position: absolute;
   -webkit-animation: spin 1s linear infinite, displayLoader 3s;
           animation: spin 1s linear infinite, displayLoader 3s;
 }
@@ -706,23 +709,30 @@ a {
 @-webkit-keyframes displayLoader {
   0% {
     visibility: visible;
+    z-index: 100;
   }
   100% {
     visibility: hidden;
+    z-index: -1;
   }
 }
 
 @keyframes displayLoader {
   0% {
     visibility: visible;
+    z-index: 100;
   }
   100% {
     visibility: hidden;
+    z-index: -1;
   }
 }
 
 @-webkit-keyframes out {
-  99% {
+  0% {
+    opacity: 0;
+  }
+  90% {
     opacity: 0;
   }
   100% {
@@ -731,7 +741,10 @@ a {
 }
 
 @keyframes out {
-  99% {
+  0% {
+    opacity: 0;
+  }
+  90% {
     opacity: 0;
   }
   100% {
