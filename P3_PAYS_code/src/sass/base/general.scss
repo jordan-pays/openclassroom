@@ -36,3 +36,10 @@ a{
     text-overflow: ellipsis;
     overflow: hidden;
 }
+
+@media (min-width: 768px) {
+    .container-global{
+        max-width: 800px;
+        padding: 20px;
+    }
+}
