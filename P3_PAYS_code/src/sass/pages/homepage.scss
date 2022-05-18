@@ -47,14 +47,20 @@
 
 .functioning {
     display: flex;
+    
     flex-direction: column;
     justify-content: space-between;
     padding: 25px 20px;
-
     &-text {
         margin: 20px 0px;
     }
-
+    &-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+    }
     &-item {
         display: flex;
         align-items: center;
@@ -66,8 +72,12 @@
         position: relative;
         @include shadow-obj;
         max-width: 370px;
-         &--active {
-            background-color: rgba($color-primary, 0.1)
+
+        &:hover,&:active{
+            background-color: rgba($color-primary, 0.1);
+            .functioning-item__info--icon{
+                color: $color-primary
+            }
         }
 
         &__circle {
@@ -95,10 +105,6 @@
                 color: darken($color-gray, $amount: 50);
                 font-size: 18px;
                 margin-right: 20px;
-
-                &--active {
-                    color: $color-primary
-                }
             }
 
             &--text {
@@ -124,7 +130,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap:20px;
+        gap:10px;
     }
 
     &-item {
@@ -177,5 +183,14 @@
             font-weight: bold;
             font-size: 18px
         }
+    }
+}
+
+@media (min-width: 768px) {
+    .restaurant-item{
+        max-width: 330px
+    }
+    .functioning-item{
+        max-width: 330px
     }
 }
